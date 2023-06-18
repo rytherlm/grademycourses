@@ -1,18 +1,22 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <header className="App-header">
-        {/* Replace or remove the existing content */}
-        <p>
-          Welcome to GradeMyCourses!
-        </p>
-      </header>
-    </div>
+    <Routes>
+    <Router>
+      <div>
+        <Navbar />
+        <Link to="/home">
+          <button>Go to Home</button>
+        </Link>
+
+        <Route path="/home" component={Home} />
+      </div>
+    </Router>
+    </Routes>
   );
 }
 
