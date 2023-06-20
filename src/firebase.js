@@ -4,7 +4,7 @@ import {getAuth} from "firebase/auth"
 // import { getAnalytics } from "firebase/analytics";
 
 // Read the firebaseConfig.json file
-import firebaseConfig from "../firebase-credentials.json";
+import firebaseConfig from "/Users/aidan/Desktop/Rate/grademycourses/src/firebase-credentials.json";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
