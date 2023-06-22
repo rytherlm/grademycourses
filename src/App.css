@@ -1,3 +1,4 @@
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -53,4 +54,12 @@
 
 .code-section h2 {
   margin-bottom: 10px;
+}
+
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Adjust the margin value as per your preference */
 }

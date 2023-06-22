@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="logo-container">
         <a href="/" className="logo-btn">
           <div className="logo-box">
-            <span className="logo-text">GMC</span>
+            <span className="logo-text">Home</span>
           </div>
         </a>
       </div>
