@@ -7,6 +7,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [selectedClass, setSelectedClass] = useState(null);
+  
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -79,7 +80,7 @@ function App() {
             )}
           </div>
         )}
-      </div>
+      </div>        
     </div>
   );
 }
