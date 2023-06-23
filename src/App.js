@@ -13,7 +13,7 @@ function App() {
     setSearchQuery(query);
 
     // Simulate searching for class names
-    const classFiles = require.context('./classes', true, /\.js$/);
+    const classFiles = require.context('./pages/classes', true, /\.js$/);
     const classes = classFiles.keys().map((key) => key.slice(2, -3)); // Extract class names
 
     const formattedQuery = query.replace(/[-\s]/g, '').toLowerCase();
@@ -49,7 +49,7 @@ function App() {
   const LazyClassComponent = lazy(() => {
     if (selectedClass) {
       const transformedClassName = transformClassName(selectedClass);
-      return import(`./classes/${transformedClassName}.js`);
+      return import(`./pages/classes/${transformedClassName}.js`);
     }
     return Promise.resolve({ default: null });
   });

@@ -1,0 +1,80 @@
+.comment-section-container {
+    margin-top: 20px;
+  }
+  
+  .comment-button {
+    background-color: #3ea6ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .comment-input-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .comment-input {
+    flex: 1;
+    height: 80px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .comment-action-buttons {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .cancel-button,
+  .submit-button {
+    background-color: #3ea6ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .comment {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .comment-user {
+    font-weight: bold;
+  }
+  
+  .comment-content {
+    margin-top: 5px;
+  }
+  
+  .comment-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .comment-buttons button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-buttons button.edit-button {
+    background-color: #f2f2f2;
+  }
+  
+  .comment-buttons button.delete-button {
+    background-color: #ff9999;
+  }
+  
