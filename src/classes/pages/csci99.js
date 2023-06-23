@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import './styles/csci99.css';
-import { AuthContext } from '../AuthContext'; // Update the import path
+import '../styles/csci99.css';
+import { AuthContext } from '../../AuthContext'; // Update the import path
 
 const Csci99 = () => {
   const { isLoggedIn } = useContext(AuthContext); // Access the isLoggedIn state

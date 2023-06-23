@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css';
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
-import { auth } from './firebase';
+import { AuthContext } from './AuthContext';
+import { auth } from './firebase'; // Import the auth variable
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login state
+  const { isLoggedIn, handleLogin, handleLogout } = useContext(AuthContext);
 
   const handleGoogle = async (e) => {
     try {
       const provider = new GoogleAuthProvider();
       if (!isLoggedIn) {
-        // User is not logged in, initiate sign-in
         await signInWithPopup(auth, provider);
-        setIsLoggedIn(true);
+        handleLogin();
       } else {
-        // User is logged in, initiate sign-out
         await signOut(auth);
-        setIsLoggedIn(false);
+        handleLogout();
       }
     } catch (error) {
       console.error('Google authentication error:', error);

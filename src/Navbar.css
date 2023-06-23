@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   width: 99%;
-  background-color: #f5f5f5;
+  background-color: #fefefe;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -31,7 +31,7 @@
 }
 
 .logo-text {
-  font-size: 23px;
+  font-size: 15px;
   margin: 0;
   
 }
